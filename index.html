@@ -1,61 +1,87 @@
-<!doctype html>
-<html class="no-js" lang="en">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Weather APP</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta property="og:title" content="This is my Portfolio Site | WapBorhan |">
-    <meta property="og:image" content="assets/images/wapborhan.jpg">
-    <meta name="twitter:image" content="assets/images/wapborhan.jpg">
-    <meta property="og:image:width" content="700" />
-    <meta property="og:image:height" content="400" />
-    <meta name="Developer" content="Borhan Uddin" />
-    <meta name="description" content="This is my Portfolio Site | WapBorhan |" />
-    <meta property="og:url" content="https://wapborhan.github.io" />
-    <meta property="og:type" content="WEBSITE" />
-    <meta property="og:title" content="|| Borhan Portfolio ||" />
-    <meta property="og:description" content="This is my Portfolio Site | WapBorhan |" />
-    <meta property="og:site_name" content="WapBorhan" />
-    <meta name="twitter:title" content="|| Borhan Portfolio ||">
-    <meta name="twitter:card" value="summary_large_image">
-    <meta name="twitter:description" content="This is my Portfolio Site | WapBorhan |">
-
-    <!--Favicon Icon-->
-    <link rel="icon" href="assets/favicon.ico" type="image/ico" sizes="16x16">
-    <!--  Animation-WOW CSS  -->
-    <link rel="stylesheet" href="Vendor/wow-master/css/animate.css">
-    <!--  Fontawsome-V5 CSS  -->
-    <link rel="stylesheet" href="Vendor/fontawesome-5/css/fontawesome.min.css">
-    <link rel="stylesheet" href="Vendor/fontawesome-5/css/all.min.css">
-    <!--  Bootstrap-V4 CSS  -->
-    <link rel="stylesheet" href="Vendor/bootstrap-4/css/bootstrap.css">
-    <link rel="stylesheet" href="Vendor/bootstrap-4/css/bootstrap.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
 </head>
-
 <body>
+    
+    <div class="container">
+        <div class="current-info">
 
+            <div class="date-container">
+                <div class="time" id="time">
+                    12:30 <span id="am-pm">PM</span>
+                </div>
+                <div class="date" id="date">
+                    Monday, 25 May
+                </div>
 
+                <div class="others" id="current-weather-items">
+                    
+                    
+                </div>
+            </div>
 
+            <div class="place-container">
+                <div class="time-zone" id="time-zone">Asia/Kolkata</div>
+                <div id="country" class="country">IN</div>
+            </div>
+        </div>
 
+        
+    </div>
 
+    <div class="future-forecast">
+        <div class="today" id="current-temp">
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+            <div class="other">
+                <div class="day">Monday</div>
+                <div class="temp">Night - 25.6&#176; C</div>
+                <div class="temp">Day - 35.6&#176; C</div>
+            </div>
+        </div>
 
+        <div class="weather-forecast" id="weather-forecast">
+            <div class="weather-forecast-item">
+                <div class="day">Tue</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night - 25.6&#176; C</div>
+                <div class="temp">Day - 35.6&#176; C</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Wed</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night - 25.6&#176; C</div>
+                <div class="temp">Day - 35.6&#176; C</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Thur</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night - 25.6&#176; C</div>
+                <div class="temp">Day - 35.6&#176; C</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Fri</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night - 25.6&#176; C</div>
+                <div class="temp">Day - 35.6&#176; C</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Sat</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night - 25.6&#176; C</div>
+                <div class="temp">Day - 35.6&#176; C</div>
+            </div>
 
-    <!--Jquery-V3.5 JS-->
-    <script src="Vendor/jquery-3/jquery.min.js"></script>
-    <!--  Animation-WOW JS  -->
-    <script src="Vendor/wow-master/js/wow.min.js"></script>
-    <!-- Fontawsome-V5 JS File-->
-    <script src="Vendor/fontawesome-5/js/fontawesome.min.js"></script>
-    <script src="Vendor/fontawesome-5/js/all.min.js"></script>
-    <!-- Bootstrap-V4 JS File-->
-    <script src="Vendor/bootstrap-4/js/popper.min.js"></script>
-    <script src="Vendor/bootstrap-4/js/bootstrap.min.js"></script>
-    <!-- Custom JS File-->
-    <script src="assets/js/custom.js"></script>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="script.js"></script>
 </body>
-
 </html>
