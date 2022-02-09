@@ -13,81 +13,60 @@
 <body>
 
     <div class="container">
-        <div class="current-info">
-
-            <div class="date-container">
-                <div class="time" id="time">
-                    12:30 <span id="am-pm">PM</span>
+        <div class="profile-nav alt">
+            <section class="panel">
+                <div class="user-heading alt clock-row terques-bg">
+                    <h1>December 14</h1>
+                    <p class="text-left">2014, Friday</p>
+                    <p class="text-left">7:53 PM</p>
                 </div>
-                <div class="date" id="date">
-                    Monday, 25 May
-                </div>
+                <ul id="clock">
+                    <li id="sec" style="transform: rotate(30deg);"></li>
+                    <li id="hour" style="transform: rotate(395deg);"></li>
+                    <li id="min" style="transform: rotate(60deg);"></li>
+                </ul>
 
-                <div class="others" id="current-weather-items">
+                <ul class="clock-category">
+                    <li>
+                        <a href="#" class="active">
+                            <i class="ico-clock2">0</i>
+                            <span>Clock</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="ico-alarm2 "></i>
+                            <span>Alarm</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="ico-stopwatch"></i>
+                            <span>Stop watch</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class=" ico-clock2 "></i>
+                            <span>Timer</span>
+                        </a>
+                    </li>
+                </ul>
 
+            </section>
 
-                </div>
-            </div>
-
-            <div class="place-container">
-                <div class="time-zone" id="time-zone">Asia/Kolkata</div>
-                <div id="country" class="country">IN</div>
-            </div>
         </div>
 
 
     </div>
 
-    <div class="future-forecast">
-        <div class="today" id="current-temp">
-            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-            <div class="other">
-                <div class="day">Monday</div>
-                <div class="temp">Night - 25.6&#176; C</div>
-                <div class="temp">Day - 35.6&#176; C</div>
-            </div>
-        </div>
 
-        <div class="weather-forecast" id="weather-forecast">
-            <div class="weather-forecast-item">
-                <div class="day">Tue</div>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-                <div class="temp">Night - 25.6&#176; C</div>
-                <div class="temp">Day - 35.6&#176; C</div>
-            </div>
-            <div class="weather-forecast-item">
-                <div class="day">Wed</div>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-                <div class="temp">Night - 25.6&#176; C</div>
-                <div class="temp">Day - 35.6&#176; C</div>
-            </div>
-            <div class="weather-forecast-item">
-                <div class="day">Thur</div>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-                <div class="temp">Night - 25.6&#176; C</div>
-                <div class="temp">Day - 35.6&#176; C</div>
-            </div>
-            <div class="weather-forecast-item">
-                <div class="day">Fri</div>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-                <div class="temp">Night - 25.6&#176; C</div>
-                <div class="temp">Day - 35.6&#176; C</div>
-            </div>
-            <div class="weather-forecast-item">
-                <div class="day">Sat</div>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-                <div class="temp">Night - 25.6&#176; C</div>
-                <div class="temp">Day - 35.6&#176; C</div>
-            </div>
-
-        </div>
-    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
         integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="vendor/bootstrap-4/js/bootstrap.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/scripts.js"></script>
 </body>
 
 </html>
